@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+</head>
+<body>
+
+    <div id="login"><!--sdian som vissar Logga in-->
+        <form action="login_form">
+
+            Namn: <input type="text" id="name">
+            <br><br>
+            Lösenord: <input type="text" id=password>
+            <br><br>
+            <input type="button" onclick="login()" id="button" value="Logga in">
+        </form>
+    </div>
+    <div id="logout"> <!--Sidan som visar Inloggad-->
+        <p>Vällkomen! Du har nu loggat in</p>
+        <input type="button" onclick="logout()" id="button" value="Logga ut">
+    </div>
+    <div id="wrongPassword"><!--sidan som visar att man har skrivit fel -->
+        <p>Du har skrivit in fel användarnamn och/eller lösenord</p>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
